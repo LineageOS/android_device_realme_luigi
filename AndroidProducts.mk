@@ -5,5 +5,5 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_oscar.mk
+    $(LOCAL_DIR)/lineage_luigi.mk
 

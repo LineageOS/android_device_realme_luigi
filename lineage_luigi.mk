@@ -11,18 +11,18 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit some common LineageOS stuff
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
-# Inherit from oscar device
+# Inherit from luigi device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := lineage_oscar
-PRODUCT_DEVICE := oscar
+PRODUCT_NAME := lineage_luigi
+PRODUCT_DEVICE := luigi
 PRODUCT_BRAND := realme
-PRODUCT_MODEL := RMX3471
+PRODUCT_MODEL := RMX3660
 PRODUCT_MANUFACTURER := realme
 
-PRODUCT_SYSTEM_NAME := RE54CBL1
-PRODUCT_SYSTEM_DEVICE := RE54CBL1
+PRODUCT_SYSTEM_NAME := RE588BL1
+PRODUCT_SYSTEM_DEVICE := RE588BL1
 
 PRODUCT_GMS_CLIENTID_BASE := android-oppo
 

@@ -7,10 +7,10 @@
 # Inherit from sm6375-common
 -include device/realme/sm6375-common/BoardConfigCommon.mk
 
-DEVICE_PATH := device/realme/oscar
+DEVICE_PATH := device/realme/luigi
 
 # Init
-TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_oscar
+TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_luigi
 
 # Touch
 SOONG_CONFIG_NAMESPACES += OPLUS_LINEAGE_TOUCH_HAL
@@ -18,8 +18,5 @@ SOONG_CONFIG_OPLUS_LINEAGE_TOUCH_HAL := INCLUDE_DIR
 SOONG_CONFIG_OPLUS_LINEAGE_TOUCH_HAL_INCLUDE_DIR := \
     $(DEVICE_PATH)/touch/include
 
-# SELinux
-BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
-
 # Inherit the proprietary files
--include vendor/realme/oscar/BoardConfigVendor.mk
+-include vendor/realme/luigi/BoardConfigVendor.mk

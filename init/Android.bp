@@ -4,8 +4,8 @@
 //
 
 cc_library_static {
-    name: "libinit_oscar",
+    name: "libinit_luigi",
     recovery_available: true,
     shared_libs: ["libbase"],
-    srcs: ["init_oscar.cpp"],
+    srcs: ["init_luigi.cpp"],
 }

@@ -44,15 +44,10 @@ const std::vector<std::string> ro_props_default_source_order = {
 void set_device_properties() {
     auto prjname = GetProperty("ro.boot.prjname", "");
     for (const auto& source : ro_props_default_source_order) {
-        if (prjname == "21707") { // IN
-            property_override("ro.product." + source + "model", "RMX3471");
-        } else if (prjname == "21708") { // EU
-            property_override("ro.product." + source + "model", "RMX3472");
-        } else if (prjname == "216EA") { // RU
-            property_override("ro.product." + source + "model", "RMX3474");
-        } else if (prjname == "2162B") { // CN
-            property_override("ro.product." + source + "device", "RE547D");
-            property_override("ro.product." + source + "model", "RMX3478");
+        if (prjname == "22667") { // IN
+            property_override("ro.product." + source + "model", "RMX3660");
+        } else if (prjname == "22668") { // EU
+            property_override("ro.product." + source + "model", "RMX3661");
         }
     }
 }

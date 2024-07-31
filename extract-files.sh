@@ -22,7 +22,7 @@ fi
 
 set -e
 
-export DEVICE=oscar
+export DEVICE=luigi
 export DEVICE_COMMON=sm6375-common
 export VENDOR=realme
 export VENDOR_COMMON=${VENDOR}

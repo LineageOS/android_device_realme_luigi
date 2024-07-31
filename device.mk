@@ -49,12 +49,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     init.device.rc \
     init.oplus.hw.rc \
-    init.oplus.hw.rc.recovery \
-    init.oscar.overlay.rc
+    init.oplus.hw.rc.recovery
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
 
 # Inherit proprietary files
-$(call inherit-product-if-exists, vendor/realme/oscar/oscar-vendor.mk)
+$(call inherit-product-if-exists, vendor/realme/luigi/luigi-vendor.mk)
