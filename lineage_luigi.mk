@@ -24,8 +24,8 @@ PRODUCT_MANUFACTURER := realme
 PRODUCT_GMS_CLIENTID_BASE := android-oppo
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    BuildDesc="RE588BL1-user 14 UKQ1.230924.001 T.R4T2.1ac2e8e-44f0-131b03 release-keys" \
-    BuildFingerprint=realme/RMX3660/RE588BL1:14/UKQ1.230924.001/T.R4T2.1ac2e8e-44f0-131b03:user/release-keys \
+    BuildDesc="RE588BL1-user 14 UKQ1.230924.001 T.R4T2.1b694e7-2-1 release-keys" \
+    BuildFingerprint=realme/RMX3660/RE588BL1:14/UKQ1.230924.001/T.R4T2.1b694e7-2-1:user/release-keys \
     DeviceName=RE588BL1 \
     DeviceProduct=RE588BL1 \
     SystemDevice=RE588BL1 \

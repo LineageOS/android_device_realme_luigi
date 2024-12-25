@@ -1,4 +1,4 @@
-# Device proprietary files - from RMX3660_14.0.0.1100(EX01) build, unless pinned
+# Device proprietary files - from RMX3660_14.0.0.1200(EX01) build, unless pinned
 
 # Audio ACDB
 odm/etc/acdbdata/Audio_Parameter_Version.txt
