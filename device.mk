@@ -54,6 +54,7 @@ PRODUCT_COPY_FILES += \
 # Overlays
 PRODUCT_PACKAGES += \
     OPlusFrameworksResTarget \
+    OPlusSettingsProviderResTarget \
     OPlusSystemUIResTarget
 
 # Soong namespaces
