@@ -34,6 +34,8 @@ PRODUCT_PACKAGES += \
     init.oplus.hw.rc \
     init.oplus.hw.rc.recovery
 
+$(call soong_config_set,libinit,vendor_init_lib,//$(LOCAL_PATH):libinit_luigi)
+
 # NFC
 PRODUCT_PACKAGES += \
     android.hardware.nfc-service.nxp \
