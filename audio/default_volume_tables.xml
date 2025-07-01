@@ -25,33 +25,165 @@
         <point>0,-9600</point>
         <point>100,-9600</point>
     </reference>
+    <!-- #ifdef
+    //YaJun.Li@MM.AudioServer.Policy, 2019/08/21,Add for voice volume -->
+    <reference name="DEFAULT_VOICE_VOLUME_CURVE">
+    <!-- Default Voice reference Volume Curve -->
+        <point>0,-4200</point>
+        <point>33,-2800</point>
+        <point>66,-1400</point>
+        <point>100,0</point>
+    </reference>
+    <!-- #endif  -->
     <reference name="DEFAULT_SYSTEM_VOLUME_CURVE">
     <!-- Default System reference Volume Curve -->
-        <point>1,-2400</point>
-        <point>33,-1800</point>
-        <point>66,-1200</point>
-        <point>100,-600</point>
+        <point>1,-3900</point>
+        <point>10,-3500</point>
+        <point>20,-3100</point>
+        <point>30,-2700</point>
+        <point>40,-2300</point>
+        <point>50,-1900</point>
+        <point>60,-1600</point>
+        <point>70,-1400</point>
+        <point>80,-1200</point>
+        <point>90,-1000</point>
+        <point>100,-900</point>
+        <point>110,-800</point>
+        <point>120,-700</point>
+        <point>130,-600</point>
+        <point>140,-500</point>
+        <point>150,-400</point>
+        <point>160,-100</point>
     </reference>
     <reference name="DEFAULT_MEDIA_VOLUME_CURVE">
     <!-- Default Media reference Volume Curve -->
+    <!-- #ifndef
+    //YaJun.Li@PSW.MM.AudioServer.Policy, 2019/08/21
+    //Modify for headset music min and default volume
         <point>1,-5800</point>
         <point>20,-4000</point>
         <point>60,-1700</point>
         <point>100,0</point>
+    #else /*  */ -->
+        <point>1,-7000</point>
+        <point>10,-6300</point>
+        <point>20,-5700</point>
+        <point>30,-5100</point>
+        <point>40,-4500</point>
+        <point>50,-3900</point>
+        <point>60,-3350</point>
+        <point>70,-3000</point>
+        <point>80,-2700</point>
+        <point>90,-2400</point>
+        <point>100,-2100</point>
+        <point>110,-1800</point>
+        <point>120,-1500</point>
+        <point>130,-1200</point>
+        <point>140,-900</point>
+        <point>150,-550</point>
+        <point>160,-150</point>
+    <!-- #endif /*  */ -->
+    </reference>
+    <!-- #ifdef
+    //Qinhui.Gu@PSW.MM.AudioServer.Policy, 2019/12/11, add USB_HEADSET device category for tuning separately -->
+    <reference name="DEFAULT_MEDIA_VOLUME_CURVE_USB_HEADSET">
+    <!-- USB_HEADSET Media reference Volume Curve -->
+        <point>1,-7000</point>
+        <point>10,-6300</point>
+        <point>20,-5750</point>
+        <point>30,-5200</point>
+        <point>40,-4700</point>
+        <point>50,-4200</point>
+        <point>60,-3700</point>
+        <point>70,-3300</point>
+        <point>80,-2950</point>
+        <point>90,-2600</point>
+        <point>100,-2250</point>
+        <point>110,-1900</point>
+        <point>120,-1550</point>
+        <point>130,-1200</point>
+        <point>140,-850</point>
+        <point>150,-530</point>
+        <point>160,-220</point>
+    </reference>
+    <!-- #endif /*  */ -->
+    <reference name="DEFAULT_MEDIA_VOLUME_CURVE_A2DP">
+    <!-- Default Media reference Volume Curve -->
+    <!-- #ifndef
+    //YaJun.Li@PSW.MM.AudioServer.Policy, 2019/08/21,
+    // Modify for bluetooth headset music min and default volume
+        <point>1,-5800</point>
+        <point>20,-4000</point>
+        <point>60,-1700</point>
+        <point>100,0</point>
+    #else /*  */ -->
+        <point>1,-7000</point>
+        <point>10,-6000</point>
+        <point>20,-5700</point>
+        <point>30,-5400</point>
+        <point>40,-5100</point>
+        <point>50,-4700</point>
+        <point>60,-4300</point>
+        <point>70,-3900</point>
+        <point>80,-3450</point>
+        <point>90,-2900</point>
+        <point>100,-2350</point>
+        <point>110,-1850</point>
+        <point>120,-1450</point>
+        <point>130,-1150</point>
+        <point>140,-900</point>
+        <point>150,-650</point>
+        <point>160,-450</point>
+    <!-- #endif /*  */ -->
     </reference>
     <reference name="DEFAULT_DEVICE_CATEGORY_HEADSET_VOLUME_CURVE">
     <!--Default Volume Curve -->
-        <point>1,-4950</point>
-        <point>33,-3350</point>
-        <point>66,-1700</point>
-        <point>100,0</point>
+        <point>1,-3900</point>
+        <point>10,-3500</point>
+        <point>20,-3100</point>
+        <point>30,-2700</point>
+        <point>40,-2300</point>
+        <point>50,-1900</point>
+        <point>60,-1600</point>
+        <point>70,-1400</point>
+        <point>80,-1200</point>
+        <point>90,-1000</point>
+        <point>100,-900</point>
+        <point>110,-800</point>
+        <point>120,-700</point>
+        <point>130,-600</point>
+        <point>140,-500</point>
+        <point>150,-400</point>
+        <point>160,-100</point>
     </reference>
     <reference name="DEFAULT_DEVICE_CATEGORY_SPEAKER_VOLUME_CURVE">
     <!-- Default is Speaker Media Volume Curve -->
+    <!-- #ifndef
+    //YaJun.Li@PSW.MM.AudioServer.Policy, 2019/08/21
+    //Modify for speaker music default volume for 19065
         <point>1,-5800</point>
         <point>20,-4000</point>
         <point>60,-1700</point>
         <point>100,0</point>
+    #else /*  */ -->
+        <point>1,-7000</point>
+        <point>10,-5400</point>
+        <point>20,-5000</point>
+        <point>30,-4750</point>
+        <point>40,-4500</point>
+        <point>50,-4050</point>
+        <point>60,-3650</point>
+        <point>70,-3300</point>
+        <point>80,-3000</point>
+        <point>90,-2700</point>
+        <point>100,-2500</point>
+        <point>110,-2300</point>
+        <point>120,-2000</point>
+        <point>130,-1800</point>
+        <point>140,-1600</point>
+        <point>150,-1250</point>
+        <point>160,-900</point>
+    <!-- #endif /*  */ -->
     </reference>
     <reference name="DEFAULT_DEVICE_CATEGORY_EARPIECE_VOLUME_CURVE">
     <!--Default Volume Curve -->
