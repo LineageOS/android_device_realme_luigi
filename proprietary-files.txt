@@ -1180,6 +1180,14 @@ odm/etc/sensor/config/holi_sc7a20_0.json
 odm/etc/sensor/config/holi_stk3acx_0.json
 odm/etc/sensor/sensor_config.json
 
+# Touchscreen firmware
+odm/firmware/tp/22667/FW_NF_ILI7807S_HUAXING.img
+odm/firmware/tp/22667/FW_NF_ILI7807S_HUAXING_FAE.img
+odm/firmware/tp/22667/LIMIT_NF_ILI7807S_HUAXING.img
+odm/firmware/tp/22668/FW_NF_ILI7807S_HUAXING.img
+odm/firmware/tp/22668/FW_NF_ILI7807S_HUAXING_FAE.img
+odm/firmware/tp/22668/LIMIT_NF_ILI7807S_HUAXING.img
+
 # VPU
 vendor/firmware/vpu20_1v.b01
 vendor/firmware/vpu20_1v.b02
